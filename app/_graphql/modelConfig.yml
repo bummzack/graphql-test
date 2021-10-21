@@ -1,0 +1,8 @@
+config:
+  modelConfig:
+    DataObject:
+      operations:
+        readOne:
+          plugins:
+            getByLink:
+              after: filter

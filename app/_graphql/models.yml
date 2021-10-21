@@ -1,0 +1,37 @@
+# -------------------------------------------------------------
+# SilverStripe or Module Models
+# -------------------------------------------------------------
+
+SilverStripe\SiteConfig\SiteConfig:
+  fields:
+    title: true
+    tagline: true
+  operations:
+    readOne: true
+
+SilverStripe\Assets\Image:
+  fields:
+    name: true
+    title: true
+    width: true
+    height: true
+    url: true
+    absoluteUrl: true
+
+# -------------------------------------------------------------
+# Pages
+# -------------------------------------------------------------
+
+Page:
+  fields:
+    id: true
+    title: true
+    menuTitle: true
+    urlSegment: true
+    parentId: true
+    showInMenus: true
+    link: true
+    elementalArea: true
+  operations:
+    read: true
+    readOne: true

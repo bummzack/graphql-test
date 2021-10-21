@@ -1,0 +1,5 @@
+---
+Name: app-config
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app

@@ -1,0 +1,27 @@
+SilverStripe\GraphQL\Schema\Schema:
+  schemas:
+    default:
+      src:
+        - app/_graphql
+
+SilverStripe\Control\Director:
+  rules:
+    'graphql': '%$SilverStripe\GraphQL\Controller.default'
+
+---
+Only:
+  environment: 'dev'
+---
+
+SilverStripe\GraphQLDevTools\Controller:
+  # show two schemas
+  schemas:
+    - default
+    - admin
+  # default schema that is selected
+  default_schema: default
+
+SilverStripe\GraphQL\Controller:
+  cors:
+    Enabled: true
+    Allow-Origin: '*'

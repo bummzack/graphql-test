@@ -1,0 +1,6 @@
+/vendor
+/.graphqlconfig
+/.graphql
+/public/_resources/
+/public/admin.types.graphql
+/.env
